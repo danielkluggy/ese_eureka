@@ -1,0 +1,14 @@
+services:
+  api:
+    container_name: eseeureka
+    build:
+      context: .
+    ports:
+      - "8761:8761"
+    networks:
+      - eseklugdorow
+
+networks:
+  eseklugdorow:
+    name: eseklugdorow
+    external: true
